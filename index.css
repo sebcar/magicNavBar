@@ -47,10 +47,10 @@ nav a{
 	height:3px;
 	width:auto;
 	background-color:#3498db;
-	transition:all 300ms;
-	-webkit-transition:all 300ms;
-	-moz-transition:all 300ms;
-	-o-transition:all 300ms;
+	transition:all 500ms;
+	-webkit-transition:all 500ms;
+	-moz-transition:all 500ms;
+	-o-transition:all 500ms;
 }
 .magic-nav-bar-1 a:hover:after{
 	left:0;
@@ -158,3 +158,91 @@ nav a{
 .magic-nav-bar-4 a:hover:before{
 	right:0%;
 }
+
+/* example 5 */
+.magic-nav-bar-5 a{	
+	position:relative;
+	overflow:hidden;
+}
+.magic-nav-bar-5 a:after,.magic-nav-bar-5 a:before {
+	content: '';
+	position:absolute;
+	height:auto;
+	width:3px;	
+	background-color:#1abc9c;	
+	transition:all 700ms;
+	-webkit-transition:all 700ms;
+	-moz-transition:all 700ms;
+	-o-transition:all 700ms;
+}
+.magic-nav-bar-5 a:after{
+	left:0;
+	right:auto;
+	top:100%;
+	bottom:0%;
+}
+.magic-nav-bar-5 a:hover:after{
+	top:0%;
+}
+.magic-nav-bar-5 a:before{
+	left:auto;
+	right:0;
+	top:0%;
+	bottom:100%;
+}
+.magic-nav-bar-5 a:hover:before{
+	bottom:0%;
+}
+/* example 6 */
+.magic-nav-bar-6 a{	
+	position:relative;
+	overflow:hidden;
+	background-color:transparent;
+	color:#1abc9c;
+	border-radius:40px;
+	border-color: #1abc9c;
+	border-width:2px;
+	border-style:solid;
+	transition:all 500ms;
+	-webkit-transition:all 500ms;
+	-moz-transition:all 500ms;
+	-o-transition:all 500ms;
+}
+.magic-nav-bar-6 a:hover{
+	border-color: #ecf0f1;
+}
+.magic-nav-bar-6 a:after {
+	padding:10px 20px;
+	line-height:1em;
+	color: #ecf0f1;
+	font-weight:400;
+	text-decoration:none;
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:#27ae60;	
+	transition:all 700ms;
+	-webkit-transition:all 700ms;
+	-moz-transition:all 700ms;
+	-o-transition:all 700ms;
+	top:0;
+	bottom:0;
+	left:-100%;
+	right:auto;
+	box-sizing: border-box;
+	border-radius:40px;
+}
+.magic-nav-bar-6 a:hover:after{
+	left:0;
+}
+.magic-nav-bar-6 a:nth-child(1):after{
+	content: 'Products';
+}
+.magic-nav-bar-6 a:nth-child(2):after{
+	content: 'About Us';
+}
+.magic-nav-bar-6 a:nth-child(3):after{
+	content: 'Contact';
+}
+
+
