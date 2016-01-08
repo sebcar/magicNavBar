@@ -6,27 +6,56 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: #ecf0f1;
 }
-
-h1{
-	margin:10px 0 0 10px;
+.container, nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox; 
+	display: -ms-flex; 
+	display: flex;
+	 -webkit-align-items: center;
+	 -moz-align-items: center;
+	  -ms-align-items: center;
+		  align-items: center;
+		-webkit-justify-content: space-around;
+	 -moz-justify-content: space-around;
+	  -ms-justify-content: space-around;
+		  justify-content: space-around;
+			-webkit-flex-wrap: wrap;
+	  -ms-flex-wrap: wrap;
+		  flex-wrap: wrap;
+	 -moz-flex-wrap: wrap;
+}
+.container{
+	max-width:1440px;
+	margin:0 auto;
+}
+h1{	
 	font-size:3em;
+	color: #2c3e50;
+	font-weight:600;
+	margin:0 auto;
+	text-align:center;
+	padding:20px;
+}
+h2{	
+	font-size:2em;
 	color: #34495e;
 	font-weight:600;
+	margin:0 auto 50px auto;
+	text-align:center;
 }
 
-.space{
-	margin-top:100px;	
-}
-.clear-fix{
-	clear:both;
+.magic-nav-bar{
+	max-width:480px;
+	margin:50px;
+	box-sizing:border-box;
 }
 nav{
-	float:right;
-	margin:10px 10px 0 0;	
+	margin: 0 auto;
 }
 nav a{
 	display:inline-block;
-	margin:0 0 0 20px;
+	margin:5px 10px;
 	padding:10px 20px;
 	line-height:1em;
 	color: #7f8c8d;
@@ -114,7 +143,7 @@ nav a{
 	right:0%;
 }
 .magic-nav-bar-3 a:before {	
-	background-color:#8e44ad;
+	background-color:#e67e22;
 }
 .magic-nav-bar-3 a:hover:after{
 	background-color: rgba(241, 196, 15,0);
@@ -169,7 +198,7 @@ nav a{
 	position:absolute;
 	height:auto;
 	width:3px;	
-	background-color:#1abc9c;	
+	background-color:#e74c3c;	
 	transition:all 700ms;
 	-webkit-transition:all 700ms;
 	-moz-transition:all 700ms;
@@ -198,9 +227,9 @@ nav a{
 	position:relative;
 	overflow:hidden;
 	background-color:transparent;
-	color:#1abc9c;
+	color:#8e44ad;
 	border-radius:40px;
-	border-color: #1abc9c;
+	border-color: #8e44ad;
 	border-width:2px;
 	border-style:solid;
 	transition:all 500ms;
@@ -220,7 +249,7 @@ nav a{
 	position:absolute;
 	height:100%;
 	width:100%;
-	background-color:#1abc9c;	
+	background-color:#8e44ad;	
 	transition:all 700ms;
 	-webkit-transition:all 700ms;
 	-moz-transition:all 700ms;
@@ -245,4 +274,144 @@ nav a{
 	content: 'Contact';
 }
 
+/* example 7 */
+.magic-nav-bar-7 a{	
+	position:relative;
+	overflow:hidden;
+	background-color:transparent;
+	color:#c0392b;
+}
+
+.magic-nav-bar-7 a:after {
+	padding:10px 20px;
+	line-height:1em;
+	color: #ecf0f1;
+	font-weight:400;
+	text-decoration:none;
+	position:absolute;
+	height:auto;
+	width:auto;
+	background-color:#c0392b;	
+	transition:all 700ms;
+	-webkit-transition:all 700ms;
+	-moz-transition:all 700ms;
+	-o-transition:all 700ms;
+	top:auto;
+	bottom:93%;
+	left:0;
+	right:0;
+	box-sizing: border-box;
+}
+.magic-nav-bar-7 a:hover:after{	
+	bottom:0%;
+}
+.magic-nav-bar-7 a:nth-child(1):after{
+	content: 'Products';
+}
+.magic-nav-bar-7 a:nth-child(2):after{
+	content: 'About Us';
+}
+.magic-nav-bar-7 a:nth-child(3):after{
+	content: 'Contact';
+}
+
+/* example 8 */
+.magic-nav-bar-8 a{	
+	position:relative;
+	overflow:hidden;
+	background-color:transparent;
+	color:#1abc9c;
+}
+
+.magic-nav-bar-8 a:after, .magic-nav-bar-8 a:before  {	
+	padding:10px 20px;
+	line-height:1em;
+	color: #ecf0f1;
+	font-weight:400;
+	text-decoration:none;
+	position:absolute;
+	height:auto%;
+	width:auto;
+	background-color:#1abc9c;	
+	transition:all 700ms;
+	-webkit-transition:all 700ms;
+	-moz-transition:all 700ms;
+	-o-transition:all 700ms;
+	left:0;
+	right:0;
+	box-sizing: border-box;
+}
+.magic-nav-bar-8 a:after{
+	top:-100%;	
+	bottom:auto;
+}
+.magic-nav-bar-8 a:before {
+	top:auto;
+	bottom:-100%;
+}
+.magic-nav-bar-8 a:hover:after{
+	top:0%;	   
+}                  
+.magic-nav-bar-8 a:hover:before {
+	bottom:0%;
+}
+.magic-nav-bar-8 a:nth-child(1):after, .magic-nav-bar-8 a:nth-child(1):before {
+	content: 'Products';
+}
+.magic-nav-bar-8 a:nth-child(2):after, .magic-nav-bar-8 a:nth-child(2):before{
+	content: 'About Us';
+}
+.magic-nav-bar-8 a:nth-child(3):after, .magic-nav-bar-8 a:nth-child(3):before{
+	content: 'Contact';
+}
+
+/* example 9 */
+.magic-nav-bar-9 a{	
+	position:relative;
+	overflow:hidden;
+	background-color:transparent;
+	color:#2ecc71;
+}
+
+.magic-nav-bar-9 a:after, .magic-nav-bar-9 a:before  {	
+	padding:10px 20px;
+	line-height:1em;
+	color: #ecf0f1;
+	font-weight:400;
+	text-decoration:none;
+	position:absolute;
+	height:auto%;
+	width:auto;
+	background-color:#2ecc71;	
+	transition:all 700ms;
+	-webkit-transition:all 700ms;
+	-moz-transition:all 700ms;
+	-o-transition:all 700ms;	
+	top:0;	
+	bottom:0;
+	box-sizing: border-box;
+}
+.magic-nav-bar-9 a:after{
+	right:-100%;	
+	left:auto;
+}
+.magic-nav-bar-9 a:before {
+	right:auto;
+	left:-100%;
+}
+.magic-nav-bar-9 a:hover:after{
+	right:0%;	   
+}                  
+.magic-nav-bar-9 a:hover:before {
+	left:0%;
+}
+.magic-nav-bar-9 a:nth-child(1):after, .magic-nav-bar-9 a:nth-child(1):before {
+	content: 'Products';
+}
+.magic-nav-bar-9 a:nth-child(2):after, .magic-nav-bar-9 a:nth-child(2):before{
+	content: 'About Us';
+}
+.magic-nav-bar-9 a:nth-child(3):after, .magic-nav-bar-9 a:nth-child(3):before{
+	content: 'Contact';
+}
 
